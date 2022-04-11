@@ -28,7 +28,7 @@ export function Taller() {
     const datosTaller = () => {
         //Función para obtener datos del taller en base al id planificacion que hay en la URL
         axios
-            .get('http://localhost:8000/api/datosTaller', {
+            .get('https://pruebasrmqn.herokuapp.com/api/datosTaller', {
                 params: {
                     id_plani: taller.idPlanificacion,
                 },

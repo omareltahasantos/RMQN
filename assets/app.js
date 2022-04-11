@@ -9,21 +9,16 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-import { useEffect, useState } from 'react';
 import './styles/app.css';
 import { Taller } from './components/Taller';
-import { InitializedComponent } from './components/InitializedComponent';
+import { NotFoundPage} from './components/NotFoundPage'
 
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<InitializedComponent />} />
-            <Route path="/taller" element={<InitializedComponent />} />
-            <Route path="/taller/:nombreTaller" element={<InitializedComponent />} />
-            <Route path="/taller/:nombreTaller/plani" element={<InitializedComponent />} />
-            <Route path="/taller/:nombreTaller/plani/:idPlanificacion" element={<Taller />} />
-
-            
+             
+                 <Route path="*" element={<NotFoundPage />} />
+            <Route path="/taller/:nombreTaller/plani/:idPlanificacion" element={<Taller />} />            
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
