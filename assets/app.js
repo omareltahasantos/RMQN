@@ -16,9 +16,11 @@ import { NotFoundPage} from './components/NotFoundPage'
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-             
-        <Route path="*" element={<NotFoundPage />} />
-            <Route path="/taller/:nombreTaller/plani/:idPlanificacion" element={<Taller />} />            
+            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/:idPlanificacion" element={<Taller/>} />
+            {/*
+            <Route path="/taller/:nombreTaller/plani/:idPlanificacion" element={<Taller />} />          
+            */}
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
