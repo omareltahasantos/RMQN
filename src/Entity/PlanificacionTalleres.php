@@ -139,12 +139,12 @@ class PlanificacionTalleres
         return $this;
     }
 
-    public function getObservacions(): ?text
+    public function getObservacions(): ?string
     {
         return $this->Observacions;
     }
 
-    public function setObservacions(?text $Observacions): self
+    public function setObservacions(?string $Observacions): self
     {
         $this->Observacions = $Observacions;
 

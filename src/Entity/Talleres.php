@@ -112,24 +112,24 @@ class Talleres
         return $this;
     }
 
-    public function getDescripcioTallerCat(): ?text
+    public function getDescripcioTallerCat(): ?string
     {
         return $this->DescripcioTaller_Cat;
     }
 
-    public function setDescripcioTallerCat(?text $DescripcioTaller_Cat): self
+    public function setDescripcioTallerCat(?string $DescripcioTaller_Cat): self
     {
         $this->DescripcioTaller_Cat = $DescripcioTaller_Cat;
 
         return $this;
     }
 
-    public function getDescripcioTallerCas(): ?text
+    public function getDescripcioTallerCas(): ?string
     {
         return $this->DescripcioTaller_Cas;
     }
 
-    public function setDescripcioTallerCas(?text $DescripcioTaller_Cas): self
+    public function setDescripcioTallerCas(?string $DescripcioTaller_Cas): self
     {
         $this->DescripcioTaller_Cas = $DescripcioTaller_Cas;
 
@@ -256,12 +256,12 @@ class Talleres
         return $this;
     }
 
-    public function getObservacionsCas(): ?text
+    public function getObservacionsCas(): ?string
     {
         return $this->Observacions_Cas;
     }
 
-    public function setObservacionsCas(?text $Observacions_Cas): self
+    public function setObservacionsCas(?string $Observacions_Cas): self
     {
         $this->Observacions_Cas = $Observacions_Cas;
 
