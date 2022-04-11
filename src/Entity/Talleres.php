@@ -196,12 +196,12 @@ class Talleres
         return $this;
     }
 
-    public function getObservacionsCat(): ?text
+    public function getObservacionsCat(): ?string
     {
         return $this->Observacions_Cat;
     }
 
-    public function setObservacionsCat(?text $Observacions_Cat): self
+    public function setObservacionsCat(?string $Observacions_Cat): self
     {
         $this->Observacions_Cat = $Observacions_Cat;
 
