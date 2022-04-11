@@ -17,7 +17,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Routes>
              
-                 <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
             <Route path="/taller/:nombreTaller/plani/:idPlanificacion" element={<Taller />} />            
         </Routes>
     </BrowserRouter>,

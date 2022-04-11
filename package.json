@@ -20,7 +20,8 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "start" : "node index.js"
+        "start" : "node app.js",
+        "heroku-postbuild": "cd public && npm install --only=dev && npm install && npm run build"
     },
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "^7.16.7",
